@@ -3,7 +3,7 @@ Create Python-like lists that implement basic list functions found in python
 
 ## How to Use
 1. Download the file to your project.
-2. Include file into your project files usine "#include <"cripsy-robot.h">
+2. Include file into your project files usine "#include <"Crispy-Robot.cpp">
 3. With that you're good to go! Enjoy!
 
 ## Features
