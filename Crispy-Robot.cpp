@@ -54,12 +54,6 @@ public:
     }
 
     //getter methods
-    dataType operator[](int index){
-        if(index < 0){
-            return *(arrayList + ((index * -1) % length));
-        }
-        else {return *(arrayList + (index % length));}
-    }
 
     //finds the first index of the input instance
     virtual int findIndexOf(dataType val){
@@ -80,6 +74,21 @@ public:
         //capturing last inbetween value
         if(*(arrayList + counter) == val) {return true;}
         return false;
+    }
+
+    //opperators
+    //indexing
+    dataType operator[](int index){
+        if(index < 0){
+            return *(arrayList + ((index * -1) % length));
+        }
+        else {return *(arrayList + (index % length));}
+    }
+    //assignment
+    void operator=(dataType * arr){
+        delete[] arrayList;
+        arrayList = arr;
+        return true;
     }
 
     //destructor
